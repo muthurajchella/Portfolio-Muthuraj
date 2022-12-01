@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,600;1,200&display=swap');
 
 :root{
-    --blue: #0563bb;
+    --blue: #000;
     --black: #45505b;
 }
 
@@ -43,12 +43,6 @@ html::-webkit-scrollbar-thumb{
 body{
     background-color: white;
     overflow-x: hidden;
-    padding-left: 15rem;
-}
-
-section{
-    min-height: 100vh;
-    padding: 1rem;
 }
 
 .btn{
@@ -83,40 +77,56 @@ section{
     color: var(--blue);
 }
 
+.main{
+    width: 100%;
+    height: auto;
+}
+
+.main-row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 10px; */
+}
+
+.main-col1{
+    width: 25%;
+    height: auto;
+    position: fixed;
+    padding: 0rem 2rem;
+}
+
+.main-col2{
+    width: 70%;
+    height: auto;
+    margin: auto;
+}
+
 header{
     position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
     height: 100%;
-    width: 20rem;
+    width: 20%;
     background-color: var(--blue);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    text-align: center;
-    
+    text-align: center;  
 }
+
+
 
  header .user img{
     height: 15rem;
     width: 15rem;
-    border-radius: 50%;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
     object-fit: cover;
-    margin-bottom: 1rem;
-    border: .7rem solid var(--yellow);
+   border: solid .1rem gold;
 } 
-
-/* header .user .name{
-    font-size: 3.5rem;
-    color: #ffff;
-}
-
-header .user .post{
-    font-size: 2rem;
-    color: #eee;
-} */
 
 header .navbar{
     width: 100%;
@@ -130,14 +140,12 @@ header .navbar ul{
 
 header .navbar ul li a{
     display: flex;
-    padding: 1rem;
+    /* padding: 1rem; */
     margin: 1.5rem 0;
-    background-color: white;
-    color: var(--blue);
-    font-size: 2rem;
-    border-radius: 5rem;  
-    justify-content: center;
-    align-items: center;
+    color: gold;
+    font-size: 1.8rem;
+    /* justify-content: center; */
+    /* align-items: center; */
 
     
 }
@@ -221,508 +229,6 @@ header .navbar ul li a:hover{
     color: var(--blue);
 }
 
-.about .row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-}
-
-.about .row .info{
-    flex: 1 1 48rem;
-    padding: 2rem 1rem;
-    padding-left: 7rem;
-}
-
-.about .row .info h3{
-    font-size: 2rem;
-    color: var(--blue);
-    padding: 1rem 0;
-    font-weight: normal;
-}
-
-.about .row .info h3 span{
-    color: var(--black);
-    padding: 0 .5rem;
-}
-
-.about .row .video{
-    flex: 1 1 48rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.about .row .video .video-box{
-    width: 30;
-    height: auto;
-    /* background-color: #222; */
-    text-align: center;
-    padding: 0rem;
-    margin: 2rem;
-}
-
-.about .row .video .video-box video{
-    width: 30rem;
-    height: 30rem;
-    object-fit: cover;
-}
-
-.about p span{
-    padding-left: 0rem;
-    font-size: 3rem;
-    color: var(--blue);
-    line-height: 5rem;
-}
-
-.about p{
-    padding-left: 8rem;
-    font-size: 2rem;
-    color: block;
-}
-
-.myskills .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-}
-
-.myskills .box-container .box{
-    height: 20rem;
-    width: 20rem;
-    border-radius: 1rem;
-    margin: 2rem;
-    overflow: hidden;
-    cursor: pointer;
-    padding-left: 3rem;
-}
-
-.myskills .box-container .box .flexSkills{
-    width: auto;
-    height: auto;
-    box-sizing: border-box;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    /* box-shadow: 0px 0px 3px rgb(229, 229, 230); */
-    flex-direction: column;
-    text-align: start;
-}
-
-.myskills .box-container .box .flexSkills .outCricle{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0px 0px 5px rgb(221, 219, 219);
-}
-
-
-.myskills .box-container .box .flexSkills .innerCricle{
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    box-shadow: inset 0px 0px 5px rgb(214, 212, 212);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-}
-
-.myskills .box-container .box .flexSkills .innerCricle i{
-    font-size: 6rem;
-    color: var(--black);
-}
-
-.myskills .box-container .box .flexSkills svg{
-    position: absolute;
-    top: 0;
-    left: 0;
-}
-
-.myskills .box-container .box .flexSkills .git circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 305;
-    stroke-dashoffset: 305;
-    animation: git 2s linear forwards;
-}
-
-
-@keyframes git{
-    100%{
-      stroke-dashoffset: 30;
-    }
-  }
-
-  .myskills .box-container .box .flexSkills .html circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 305;
-    stroke-dashoffset: 305;
-    animation: html 2s linear forwards;
-}
-
-@keyframes html{
-    100%{
-      stroke-dashoffset: 30;
-    }
-  }
-
-  .myskills .box-container .box .flexSkills .css circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 305;
-    stroke-dashoffset: 305;
-    animation: css 2s linear forwards;
-}
-
-@keyframes css{
-    100%{
-      stroke-dashoffset: 55;
-    }
-  }
-
-  
-  .myskills .box-container .box .flexSkills .boot circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 305;
-    stroke-dashoffset: 305;
-    animation: boot 2s linear forwards;
-}
-
-@keyframes boot{
-    100%{
-      stroke-dashoffset: 55;
-    }
-  }
-
-  
-  .myskills .box-container .box .flexSkills .js circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 305;
-    stroke-dashoffset: 305;
-    animation: js 2s linear forwards;
-}
-
-@keyframes js{
-    100%{
-      stroke-dashoffset: 85;
-    }
-  }
-
-.myskills .box-container .box .flexSkills .react circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 305;
-    stroke-dashoffset: 305;
-    animation: react 2s linear forwards;
-}
-
-@keyframes react{
-    100%{
-      stroke-dashoffset: 85;
-    }
-  }
-
-  .myskills .box-container .box .flexSkills .redux circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 305;
-    stroke-dashoffset: 305;
-    animation: redux 2s linear forwards;
-}
-
-@keyframes redux{
-    100%{
-      stroke-dashoffset: 105;
-    }
-  }
-
-.myskills .box-container .box .flexSkills .jq circle{
-    fill: none;
-    stroke: url(#GradientColor);
-    stroke-width: 20px;
-    stroke-dasharray: 305;
-    stroke-dashoffset: 305;
-    animation: jq 2s linear forwards;
-}
-
-@keyframes jq{
-    100%{
-      stroke-dashoffset: 125;
-    }
-  }
-
-.myskills .box-container .box .flexSkills .skillscon{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    line-height: 2rem;
-    font-size: 1.5rem;
-    color: #673ab7;
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-    margin-top: 3rem;
-    margin-left: 3rem;
-    background-color: #fef9ff;
-    opacity: 0;
-    transition: 0.5s;
-}
-
-
-.myskills .box-container .box .flexSkills .skillscon:hover{
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    line-height: 2rem;
-    font-size: 1.5rem;
-    color: #2f25af;
-    width: 8rem;
-    height: 8rem;
-    border-radius: 50%;
-    margin-top: 1.7rem;
-    margin-left: 1.9rem;
-    background-color: #fef9ff;
-    opacity: 1;
-}
-
-.education{
-    width: auto;
-    min-height: 60vh;
-}
-
-.education .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 1rem 0;
-    padding-left: 7rem;
-}
-
-.education .box-container .box{
-    width: 45rem;
-    margin: 4rem 1rem;
-    padding-left: 5rem;
-    border-left: .2rem solid rgb(44, 44, 44);
-    position: relative;
-}
-
-.education .box-container .box span{
-    font-size: 1.3rem;
-    background-color: #222;
-    color: #fff;
-    border-radius: 5rem;
-    padding: .5rem 2.5rem;
-}
-
-.education .box-container .box h3{
-    font-size: 2rem;
-    color: var(--black);
-    padding-top: 1.5rem;
-
-}
-
-.education .box-container .box p{
-    font-size: 1.4rem;
-    color: var(--black);
-    padding-top: 1rem 0;    
-}
-
-.education .box-container .box i{
- position: absolute;
- top: -1.5rem;
- left: -2.5rem;
- height: 5rem;
- width: 5rem;
- border-radius: 50%;
- line-height: 5rem;
- text-align: center;
- font-size: 2rem;
- color: #fff;
- background-color: var(--blue);   
-}
-
-.myworks .box-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 2rem 0;
-}
-
-.myworks .box-container .box{
-    height: 20rem;
-    width: 26rem;
-    border-radius: 1rem;
-    margin: 2rem;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.myworks .box-container .box img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-.myworks .box-container .box:hover img{
-    transform: scale(1.2);
-}
-
-.myworks .workHome{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.myworks .workHome .app{
-    background-color: var(--black);
-    border-radius: .2rem;
-    margin-top: 1rem;
-    padding: 1rem;
-    margin: .5rem;
-}
-
-.myworks .workHome .app h1 a{
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-}
-
-.myworks .workHome .app:hover{
-    background-color: white;
-}
-
-.myworks .workHome .app a:hover{
-    color: var(--blue);
-}
-
-.contact{
-    width: auto;
-    min-height: 60vh;
-}
-
-.contact .row{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap:wrap;
-    padding-left: 5rem;
-}
-
-.contact .row .content{
-    flex: 1 1 1 ;
-    padding: 4rem;
-    padding-bottom: 0;
-    margin-top: 5rem;
-    /* border: solid 1px black; */
-    box-shadow: 0px 0px 3px rgb(184, 180, 180);
-}
-
-.contact .row .content{
-    text-transform: uppercase;
-    color: var(--black);
-    font-size: 2rem;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 2rem;
-}
-
-.contact .row .content .info h3{
-    display: flex;
-    align-items: center;
-    font-size: 1.8rem;
-    color: var(--black);
-    padding: 1rem 0;
-    font-weight: normal;
-    cursor: pointer;
-}
-
-.contact .row .content .info h3 i{
-    padding-right: 1rem 0;
-    color: var(--blue);
-}
-
-
-.contact .row .content .info h3:hover{
-    color: var(--blue);
-}
-
-.contact .row .content .info ul{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex: 1;
-    width: auto;
-    height: 8.5rem;
-
-}
-
-.contact .row .content .info ul li{
-    list-style: none;
-}
-
-.contact .row .content .info ul li a{
-    text-decoration: none;
-    font: 1.5rem;
-    color: var(--black);
-    padding-left: .5rem;
-}
-
-.contact .row .content .info ul li a:hover{
-    color: var(--blue);
-}
-
-.footer{
-    width: auto;
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(63, 65, 78);
-    border-top: solid 2px rgb(88, 153, 238);
-}
-
-.footer-con h1{
-    display: flex;
-    flex-direction: row;
-    font-size: 1.3rem;
-    color: white;
-    line-height: 2rem;
-}
-
-
-.footer-con span{
-    color: var(--blue);
-    cursor: pointer;  
-}
 
 
 
@@ -815,50 +321,4 @@ header .navbar ul li a:hover{
     .home h1{
         font-size: 3.5rem;
     }
-
-    .about .row .img .img-box{
-        width: 100%;
-    }
-
-    .education .box-container .box{
-        width: 100%;
-
-    }
-
-    .myworks .box-container .box{
-        width: 100%;
-    }
-
-    .about .row .info{
-        width: 100%;
-        flex: 1 1 48rem;
-        padding: 2rem 1rem;
-        padding-left: 7rem;
-    }
-    
-    .about .row .info h3{
-        font-size: 3rem;
-        color: var(--blue);
-        padding: 1rem 0;
-        font-weight: normal;
-    }
-    
-    .about .row .info h3 span{
-        padding: 0 .8rem;
-    }
-    
-    .about .row .video{
-        width: 100%;
-    }
-
-    .myskills .box-container .box{
-        width: 100%;
-    }
-
-        
-    .myskills .box-container .box .flexSkills .skillscon:hover{
-        margin-top: 3rem;
-        margin-left: 3rem;
-    }
-   
    }
