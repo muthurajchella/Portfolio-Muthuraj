@@ -69,7 +69,7 @@ body{
 
 .hr-bk{
     width: 100%;
-    border-bottom: solid 1px white;
+    border-bottom: solid 1px rgb(128, 126, 126);
     margin-top: 1rem;
 }
 /* heading white*/
@@ -93,7 +93,7 @@ body{
 
 .hr-wh{
     width: 100%;
-    border-bottom: solid 1px rgb(126, 122, 122);
+    border-bottom: solid 1px rgb(209, 205, 205);
     margin-top: 1rem;
     margin-bottom: 1rem       ;
 }
@@ -110,6 +110,8 @@ header{
     width: 100%;
     height: auto;
     background-color: #000;
+    position: fixed;
+    z-index: 1000;
 }
 
 .header-flex{
@@ -275,7 +277,6 @@ a:hover{
     width: 100%;
     height: auto;
     margin-top: 1rem;
-    /* line-height: 2rem; */
 }
 
 .about-obj h1{
@@ -334,12 +335,383 @@ a:hover{
 .aboutVideo video{
     width: 100%;
     height: 16rem;
-    
-    
-
-
 }
 /*About End*/
+
+/*Skills Start*/
+.skills{
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+    background-color: black;
+    padding-top: 2rem;
+}
+
+.skills-flex{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+.skills-Flex-box{
+    width: 25%;
+    height: auto;
+    padding-right: 1rem;
+    margin-top: 2rem;
+}
+
+.skillsBox{
+    width: 70%;
+    height: auto;
+    margin: auto;
+    position: relative;
+}
+
+.outCricle{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 5px rgb(221, 219, 219);
+}
+
+.innerCricle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 5px gold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+
+.innerCricle i{
+    font-size: 4rem;
+    color: white;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.html circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: html 2s linear forwards;
+}
+
+@keyframes html{
+    100%{
+      stroke-dashoffset: 30;
+    }
+}
+
+.git circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: git 2s linear forwards;
+}
+
+
+@keyframes git{
+    100%{
+      stroke-dashoffset: 85;
+    }
+}
+
+.css circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: css 2s linear forwards;
+}
+
+@keyframes css{
+    100%{
+      stroke-dashoffset: 55;
+    }
+  }
+ 
+.boot circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: boot 2s linear forwards;
+}
+
+@keyframes boot{
+    100%{
+      stroke-dashoffset: 55;
+    }
+  }
+
+  
+.js circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: js 2s linear forwards;
+}
+
+@keyframes js{
+    100%{
+      stroke-dashoffset: 85;
+    }
+  }
+
+.react circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: react 2s linear forwards;
+}
+
+@keyframes react{
+    100%{
+      stroke-dashoffset: 85;
+    }
+  }
+
+.redux circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: redux 2s linear forwards;
+}
+
+@keyframes redux{
+    100%{
+      stroke-dashoffset: 105;
+    }
+  }
+
+.jq circle{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 305;
+    stroke-dashoffset: 305;
+    animation: jq 2s linear forwards;
+}
+
+@keyframes jq{
+    100%{
+      stroke-dashoffset: 125;
+    }
+  }
+
+.skillscon{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.skillscon h3{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.skillscon p{
+    font-size: 1.2rem;
+    color: white;
+}
+
+/*Skills End*/
+
+/*Works Start*/
+.works{
+    width: 100%;
+    height: auto;
+    margin-top: 3rem;
+}
+
+.workFlex{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.work-boxs{
+    width: 33.3%;
+    height: auto;
+    padding-right: 1rem;
+}
+
+.workBox{
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    /* border: solid 1px gold; */
+}
+
+.workBox img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.workBox:hover img{
+    transform: scale(1.1);
+}
+/*Works End*/
+
+/*Education Start*/
+.education{
+    width: 100%;
+    height: auto;
+    background-color: black;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.edu-flex{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.edu-box1{
+    width: 50%;
+    height: auto;
+    padding-right: 1rem;
+}
+
+.eduBox1{
+    width: 100%;
+    height: auto;
+}
+
+.eduBox1 i{
+    font-size: 2rem;
+    color: white;
+}
+
+.eduBox1 span{
+    font-size: 2rem;
+    color: white;
+}
+
+.eduBox1 h3{
+    font-size: 1.5rem;
+    color: white;
+}
+
+.edu-box2{
+    width: 50%;
+    height: auto;
+    padding-right: 1rem;
+}
+
+.eduBox2{
+    width: 100%;
+    height: auto;
+}
+
+.eduBox2 i{
+    font-size: 2rem;
+    color: white;
+}
+
+.eduBox2 span{
+    font-size: 2rem;
+    color: white;
+}
+
+.eduBox2 h3{
+    font-size: 1.5rem;
+    color: white;
+}
+/*Education End*/
+
+/*Footer Start*/
+footer{
+    width: 100%;
+    height: auto;
+    padding: 3rem 0rem 1rem 0rem;
+    background-color: white;
+}
+
+.footer-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-cont{
+    text-align: center;
+}
+
+.footer-cont p{
+    font-size: 1rem;
+    color: black;
+}
+
+.footer-cont p span{
+    font-size: 1rem;
+    color: rgb(221, 189, 7);
+    cursor: pointer;
+    transition: .5rem;
+}
+
+.footer-cont p span:hover{
+    color: black;
+}
+
+.footer-cont ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.footer-cont ul li{
+   list-style: none;
+}
+
+.footer-cont ul li a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    transition: .5s;
+}
+
+.footer-cont ul li a:hover{
+    color: gold;
+}
+/*Footer End*/
 
 
 @media (max-width:991px){
@@ -350,13 +722,14 @@ a:hover{
     }
 
     /*Header Start*/
-
     #icon{
         display: block;
     }
 
     header{
         position: relative;
+        position: fixed;
+        z-index: 1000;
     }
 
     nav{
@@ -370,7 +743,7 @@ a:hover{
         top: 4.6rem;
         left: -100%;
         width: 90%;
-        background-color: rgba(255, 217, 0, 0.863);
+        background-color: gold;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -462,6 +835,71 @@ a:hover{
     }
     /*Home End*/
 
+    /*About Start*/
+    .about-flex{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-details{
+        width: 100%;
+        height: auto;
+        padding-right: 0rem;
+    }
+
+    .aboutDetail h1{
+        font-size: 1.5rem;
+    }
+
+    .aboutDetail h1 span{
+        font-size: 1.5rem;
+    } 
+
+    .about-video{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .aboutVideo{
+        padding: 0rem;
+    }
+
+    .about-obj h1{
+        font-size: 2rem;
+    }
+
+    .about-obj p{
+        font-size: 1rem;
+    }
+
+    .aboutDetail{
+        line-height: 3rem;
+    }
+    /*About Start*/
+
+    .skills-flex{
+        width: 100%;
+        height: auto;
+    }
+
+    .skills-Flex-box{
+        width: 50%;
+        height: auto;
+    }
+
+    .work-boxs{
+        width: 50%;
+        height: auto;
+    }
+
+    .edu-flex{
+        width: 100%;
+    }
+
+    .edu-box1{
+        
+    }
+
 }
 
 
@@ -495,6 +933,48 @@ a:hover{
     .homeImg:hover img{
         transform: scale(1.2);
     }
+
+    .aboutDetail h1{
+        font-size: 1.5rem;
+    }
+
+    .aboutDetail h1 span{
+        font-size: 1.5rem;
+    } 
+
+    .about-obj h1{
+        font-size: 1.7rem;
+    }
+
+    .about-obj p{
+        font-size: 1rem;
+    }
+
+    
+    .skills-Flex-box{
+        width: 50%;
+        height: auto;
+    }
+
+    .work-boxs{
+        width: 100%;
+        height: auto;
+    }
+
+    .edu-flex{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .edu-box1{
+        width: 100%;
+    }
+
+    .edu-box2{
+        width: 100%;
+        margin-top: 1rem;
+    }
    
 }
 
@@ -512,6 +992,32 @@ a:hover{
 
     .homeImg:hover img{
         transform: scale(1.1);
+    }
+
+    .aboutDetail h1{
+        font-size: 1.3rem;
+    }
+
+    .aboutDetail h1 span{
+        font-size: 1.3rem;
+    } 
+
+    .about-obj h1{
+        font-size: 1.5rem;
+    }
+
+    
+    .about-obj p{
+        font-size: 1rem;
+    }
+
+    .aboutDetail{
+        line-height: 2rem;
+    }
+
+    .skills-Flex-box{
+        width: 100%;
+        height: auto;
     }
    
 
