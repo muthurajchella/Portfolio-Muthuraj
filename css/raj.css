@@ -58,18 +58,18 @@ body{
 }
 
 .heading-bk h1{
-    font-size: 2.5rem;
-    color: white;
+    font-size: 2rem;
+    color: rgb(253, 251, 251);
 }
 
 .heading-bk h1 span{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: gold;
 }
 
 .hr-bk{
     width: 100%;
-    border-bottom: solid 1px rgb(128, 126, 126);
+    border-bottom: solid 1px rgb(63, 62, 62);
     margin-top: 1rem;
 }
 /* heading white*/
@@ -82,12 +82,12 @@ body{
 }
 
 .heading-wh h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: black;
 }
 
 .heading-wh h1 span{
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: gold;
 }
 
@@ -128,18 +128,19 @@ nav{
 }
 
 nav ul{
+    width: 60%;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
 }
 
 nav ul li{
     list-style: none;
+    transition: .1s;
 }
 
 nav ul li a{
     text-decoration: none;
-    margin-left: 1rem;
     color: #fff;
     transition: .5s;
     text-transform: uppercase;
@@ -149,10 +150,14 @@ a.active{
     color: gold;
 }
 
-a:hover{
-    color: gold;
+nav ul li:hover{
     transform: scale(1.1);
 }
+
+nav ul li a:hover{
+    color: gold;
+}
+
 
 #icon{
     color: gold;
@@ -166,7 +171,12 @@ a:hover{
 .home{
     width: 100%;
     height: auto;
-    background-color: black;
+    /* background-color: black; */
+    background: linear-gradient(#00000054, #00000054), url(https://images.wallpapersden.com/image/download/dark-sun-minimal_bGxsbWeUmZqaraWkpJRmbmdlrWZlbWU.jpg);
+    background-size: cover;
+    background-position: center;
+    /* object-fit: cover;
+    object-position: center; */
     transition: .5s;
 }
 
@@ -192,7 +202,7 @@ a:hover{
 }
 
 .homeCont h1{
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     font-weight: 700;
     color: white;
     cursor: pointer;
@@ -270,7 +280,7 @@ a:hover{
     width: 100%;
     height: auto;
     background-color: white;
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .about-obj{
@@ -280,12 +290,12 @@ a:hover{
 }
 
 .about-obj h1{
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: black;
 }
 
 .about-obj p{
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     color: rgb(55, 55, 102);
 }
 
@@ -310,13 +320,13 @@ a:hover{
     padding: 2rem;
 }
 .aboutDetail h1{
-    font-size: 1.8rem;
-    color: black;
+    font-size: 1.5rem;
+    color: gold;
 }
 
 .aboutDetail h1 span{
-    font-size: 1.8rem;
-    color: gold;
+    font-size: 1.5rem;
+    color: black;
 }
 
 .about-video{
@@ -776,6 +786,9 @@ footer{
     /*Header End*/
 
     /*Home Start*/
+    .home{
+        padding-top: 2.5rem;
+    }
 
     .flex-home{
         display: flex;
@@ -785,6 +798,7 @@ footer{
     .home-cont{
         width: 100%;
         text-align: center;
+        padding-left: 0rem;
     }
 
     .home-cont h1{
